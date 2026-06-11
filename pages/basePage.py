@@ -12,3 +12,6 @@ class BasePage:
     def get_text(self, locator):
         return self.page.locator(locator).text_content()
 
+    def select_dropdown(self, locator, value):
+        self.page.locator(locator).click()
+        self.page.get_by_text(value).click()
