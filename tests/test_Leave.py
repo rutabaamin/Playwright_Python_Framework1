@@ -15,8 +15,9 @@ def test_assign_leave(logged_in_page):
     leave.assign_leave(
         employee="Zeeshan ASGHAR ALI",
         leave_type="CAN - FMLA",
-        from_date="2026-06-15",
-        to_date="2026-06-16",
+        from_date="2026-10-06",
+        to_date="2026-10-06",
+        partial_days="Full Day",
         comment="Automation leave test"
     )
 
